@@ -56,9 +56,14 @@ export default function UploadPage() {
         className="upload-dropzone"
         onClick={() => fileInputRef.current.click()}
       >
-        <div className="upload-plus">+</div>
+        <div className="upload-plus">
+  <span className="icon-plus">+</span>
+  <span className="icon-camera">📷</span>
+</div>
+
         <div className="upload-text">
-    {imageFile ? "Choose another image" : "Choose menu image"}
+          <span className="text-file">{imageFile ? "Choose another image" : "Choose menu image"}</span>
+  <span className="text-camera">{imageFile ? "Capture another image" : "Capture menu image"}</span>
   </div>
         <div className="upload-helper">
           JPG or PNG or JPEG

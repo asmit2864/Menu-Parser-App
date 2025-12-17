@@ -552,6 +552,45 @@ body {
   line-height: 1;
 }
 
+/* Default: Desktop */
+.icon-plus {
+  display: inline;
+}
+
+.icon-camera {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .icon-plus {
+    display: none;
+  }
+
+  .icon-camera {
+    display: inline;
+  }
+}
+
+.text-file {
+  display: inline;
+}
+
+.text-camera {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .text-file {
+    display: none;
+  }
+
+  .text-camera {
+    display: inline;
+  }
+}
+
 .upload-text {
   margin-top: 10px;
   font-size: 16px;
