@@ -6,7 +6,7 @@
  */
 export async function fetchDishImages(dishName, limit = 4) {
 	const query = encodeURIComponent(`${dishName}`);
-	const url = `http://localhost:5000/api/images?q=${query}&limit=${limit}`;
+	const url = `https://menu-parser-app.onrender.com/api/images?q=${query}&limit=${limit}`;
 	try {
 		const res = await fetch(url);
 		if (!res.ok) {
